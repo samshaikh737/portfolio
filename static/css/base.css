@@ -3,9 +3,11 @@
   }
   body{
     background-color: black !important;
+    color: white !important;
   }
-  
+
   .navbar{
+    background-color: black !important;
     z-index: 1;
   }
   .nav-logo{

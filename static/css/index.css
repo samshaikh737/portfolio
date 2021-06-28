@@ -20,22 +20,73 @@
     margin-bottom: 1rem;
   }
 
-  .header .header-contain .c-btn{
-    margin: 1rem 0;
-    padding: 10px 30px;
-    border-radius: 20px;
-    font-size: 17px;
-    font-weight: bold;
-    color: white;
-    background: var(--main-green);
-    outline: none;
-    border: none;
-    cursor: pointer;      
-  }
+    .c-btn{
+        margin: 1rem 0;
+        padding: 10px 30px;
+        border-radius: 20px;
+        font-size: 17px;
+        font-weight: bold;
+        color: white;
+        background: var(--main-green);
+        outline: none;
+        border: none;
+        cursor: pointer;      
+    }
+    .c-btn a{
+        text-decoration: none !important;
+        color: white;
+    }   
 
-  .header .header-img-container img{
-    width: 100%;
-  }
+    .header .header-img-container img{
+      width: 100%;
+    }
+
+
+    
+    .about{
+        margin: 5rem 0;
+        font-family: sans-serif;
+      }
+      .about-row{
+        align-items: center;
+      }
+    
+      .about .about-img-container{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .about .about-img-container img{
+        border: 10px solid var(--main-green);
+        padding: 10px;
+        width: 90%;
+      }
+  
+      .about .about-contain .about-my-work{
+        margin: 3rem 0;
+      }
+      .about .about-contain .about-my-work .about-title{
+        margin-bottom: 1rem;
+      }
+      .about .about-contain .about-my-work .about-desc{
+        color: gray;
+        margin-bottom: 1rem;
+      }
+      .about .about-contain .about-me{
+        margin: 1rem 0;
+      }
+      .about .about-contain .about-me > div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 5px 0;
+      }
+  
+      .highlight{
+        color: var(--main-green);
+      }
+  
+  
  
 
   @media screen and (max-width:767px) {
