@@ -1,0 +1,46 @@
+.header{
+    background-color: black;
+    color: white;
+  }
+
+  .header-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+  }
+
+  .header .header-contain .header-hello{
+    color: var(--main-green);
+    margin-bottom: 1rem;
+  }
+
+  .header  .header-contain .header-title{
+    font-size: 50px;
+    margin-bottom: 1rem;
+  }
+
+  .header .header-contain .c-btn{
+    margin: 1rem 0;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    background: var(--main-green);
+    outline: none;
+    border: none;
+    cursor: pointer;      
+  }
+
+  .header .header-img-container img{
+    width: 100%;
+  }
+ 
+
+  @media screen and (max-width:767px) {
+    .header .header-row{
+        height: auto;
+        padding: 3rem 0.5rem;
+    }
+  }

@@ -1,0 +1,50 @@
+   :root{
+    --main-green:#08d665;
+  }
+  body{
+    background-color: black !important;
+  }
+  
+  .navbar{
+    z-index: 1;
+  }
+  .nav-logo{
+    font-size: 25px !important;
+    font-weight: bold;
+    color: #08d665 !important;
+  }
+
+
+  .nav-link{
+    color: white !important;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+  
+  .nav-link:hover{
+    color: var(--main-green) !important;
+  }
+  .active{
+    color: var(--main-green) !important;
+  }
+
+  .navbar-toggler{
+    color: black !important;
+    border: none !important;
+    background-color: var(--main-green) !important;
+    border-radius: 0 !important;
+    outline: none !important;
+  }
+
+  .navbar-toggler i{
+    font-weight: 400;
+    color: black;
+  }
+
+  @media screen and (max-width:765px) {  
+    .navbar-nav{
+      text-align: right !important;
+      margin-top: 1rem;
+    }
+  }
+
