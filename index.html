@@ -41,11 +41,11 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">About</a>
-          <a class="nav-link" href="#">services</a>
-          <a class="nav-link" href="#">Portfolio</a>
-          <a class="nav-link" href="#">blog</a>
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#about-container">About</a>
+          <a class="nav-link" href="#services-container">services</a>
+          <a class="nav-link" href="#portfolio-container">Portfolio</a>
+          <a class="nav-link" href="#blog-container">blog</a>
+          <a class="nav-link" href="#contact-container">Contact</a>
         </div>
       </div>
     </div>
@@ -53,7 +53,7 @@
   <!-- /========= navbar end ============== / -->
 
   <!-- /========= Header start ============== / -->
-  <header class="header">
+  <header class="header" id="header-container">
     <div class="header-container container">
       <div class="header-row row">
 
@@ -79,7 +79,7 @@
   
 
   <!-- /========= About end ============== / -->
-  <section class="about">
+  <section class="about" id="about-container">
     <div class="about-container container">
       <div class="row about-row">
 
@@ -121,7 +121,7 @@
 
 
   <!-- /========= Services start ============== / -->
-  <section class="services">
+  <section class="services" id="services-container">
     
     <!-- /========= Title start ============== / -->
     <div class="title-container">
@@ -240,21 +240,70 @@
   </section>
   <!-- /========= Services end ============== / -->
 
+  <!-- /========= Portfolio end ============== / -->
+  <section class="portfolio" id="portfolio-container">
+
+    <!-- /========= Title start ============== / -->
+    <div class="title-container">
+      <h1 class="title">MY <span>PORTFOLIO</span></h1>
+    </div>
+    <!-- /========= Title end ============== / -->
+    
+    <div class="portfolio-container container">
+      <div class="portfolio-btn-container">
+          <button class="c-btn">ALL</button>
+          <button class="c-btn">Design</button>
+          <button class="c-btn">Development</button>
+          <button class="c-btn">Print</button>
+      </div>
+
+      <div class="portfolio-img-container">
+        <div class="portfolio-img-row row" id="protfolio-data">
+          <!-- protfolioDataLoop  -->
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- /========= Portfolio end ============== / -->
 
 
-  <style>
-
-  </style>
 
 
+  <script>
 
+    const portfolioData = document.querySelector("#protfolio-data");
 
+    function protfolioDataLoop(num) {
+      for (let i = 0; i < num; i++) {
+        let div = document.createElement("div");
+        div.className = "col-lg-4 col-md-4 col-12 data";
+        
+        div.innerHTML = `
 
+        <div class="portfolio-card"> 
 
+          <img src="./static/img/portfolio/${i+1}.jpg" alt="portfolio">
 
+          <div class="contain">
+          <a href="#" class="portfolio-link">
+            <i class="fas fa-eye"></i>
+          </a>
+          <a href="#" class="portfolio-link">
+            <i class="fas fa-link"></i>
+          </a>
+          </div>
 
+        </div>
 
+        `
+        portfolioData.appendChild(div)
+      }
+    }
+    protfolioDataLoop(6)
 
+  </script>
 
 
 
