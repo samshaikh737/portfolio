@@ -46,6 +46,7 @@
     .about{
         margin: 5rem 0;
         font-family: sans-serif;
+        transition: all 0.3s ease;
       }
       .about-row{
         align-items: center;
@@ -80,13 +81,62 @@
         align-items: center;
         justify-content: space-between;
         margin: 5px 0;
+        text-transform:capitalize;
       }
   
       .highlight{
         color: var(--main-green);
       }
   
-  
+
+      
+    .services{
+        margin: 5rem 0;
+      }
+      .services .services-card .services-card-img-container img{
+        width: 100%;
+      }
+      .services .services-card{
+        transition: all 0.3s ease;
+        border: 2px solid white;
+        padding: 1.5rem;
+        border-radius: 10px;
+        text-align: center;
+        margin: 1rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .services .services-card .services-card-contain .card-title{
+        text-decoration: none;
+        color: white;
+      }
+      .services .services-card .services-card-contain .card-title h3{
+        margin: 2rem 0 1rem 0;
+        transition: 0.3s;
+      }
+
+      .services .services-card .services-card-contain .card-title:hover{
+          color: var(--main-green);
+      }
+      .service-title-active{
+          color: var(--main-green) !important;
+      }
+      
+    .title-container{
+        margin: 3rem ;
+        text-align: center;
+        font-family: sans-serif;
+      }
+    .title-container .title{
+      font-weight: bold;
+    }
+
+    .title-container .title span{
+        color: var(--main-green);
+    }
  
 
   @media screen and (max-width:767px) {
