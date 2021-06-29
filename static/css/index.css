@@ -230,6 +230,7 @@
    .blog .blog-card .blog-contain .blog-title{
      margin-bottom: 1rem;
      transition: .3s;
+     text-transform: capitalize;
    }
 
   .blog .blog-card .blog-contain .blog-date{
@@ -242,6 +243,62 @@
   }
   .blog .blog-card .blog-contain .blog-desc{
     color: #cccccc;
+  }
+
+
+
+  /* ====== Contact ========== */
+  
+  .contact{
+    margin: 3rem 0;
+  }
+  .contact .contact-row{
+    align-items: center;
+  }
+  .contact .contact-form-container form .form-control{
+    background: black;
+    outline: none;
+    border: 1px solid var(--main-green) ;
+    color: white;
+    font-size: 18px;
+    border-radius: 0;
+    margin: auto 5px;
+  }
+
+  .contact .contact-form-container form .email-subject-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact .contact-form-container form .contact-btn-container{
+    text-align: center;
+  }
+
+  .contact .contact-address-container{
+    border: 1px solid;
+    padding: 1rem;
+  }
+  .contact .contact-address-container .contact-address-title{
+    margin: 2rem 0;
+    font-weight: bold;
+    color: var(--main-green);
+  }
+
+  .contact .contact-address-container .contact-address{
+    display:flex;
+    align-items: center;
+    margin: 1rem auto;
+  }
+
+  .contact .contact-address-container .contact-address i{
+    font-size: 25px;
+    color: white;
+    background: var(--main-green);
+    padding: 0.5rem 0.8rem;
+    border-radius: 50%;
+    align-items: center;
+    margin-right: 1rem;
   }
 
 
