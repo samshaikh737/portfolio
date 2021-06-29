@@ -43,6 +43,28 @@
     color: black;
   }
 
+  /* ======== default btn ===== */
+  .c-btn{
+    margin: 1rem 0;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    background: var(--main-green);
+    outline: none;
+    border: none;
+    cursor: pointer;      
+  }
+  .c-btn:hover{
+    transition: 0.3s;
+    background-color: #17a055;
+  }
+  .c-btn a{
+    text-decoration: none !important;
+    color: white;
+  }   
+
   @media screen and (max-width:765px) {  
     .navbar-nav{
       text-align: right !important;

@@ -21,22 +21,6 @@
     margin-bottom: 1rem;
   }
 
-    .c-btn{
-        margin: 1rem 0;
-        padding: 10px 30px;
-        border-radius: 20px;
-        font-size: 17px;
-        font-weight: bold;
-        color: white;
-        background: var(--main-green);
-        outline: none;
-        border: none;
-        cursor: pointer;      
-    }
-    .c-btn a{
-        text-decoration: none !important;
-        color: white;
-    }   
 
     .header .header-img-container img{
       width: 100%;
