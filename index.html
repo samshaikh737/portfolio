@@ -265,57 +265,59 @@
 
     </div>
 
+    <div class="company-record-counter container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 col-12">
+
+          <div class="counter">
+            <h1><span class="counter-num">100</span>+</h1>
+            <p class="counter-title">Successul Projects</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="counter">
+            <h1><span class="counter-num">100</span>K</h1>
+            <p class="counter-title">Happy clients</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="counter">
+            <h1><span class="counter-num">100</span>+</h1>
+            <p class="counter-title">Team Members</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="counter">
+            <h1><span class="counter-num">100</span>+</h1>
+            <p class="counter-title">winnig Awards</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </section>
   <!-- /========= Portfolio end ============== / -->
 
   
 
 
-<script>
-
-    const portfolioData = document.querySelector("#protfolio-data");
-    let design,all,development,printBtn;
-
-    design = document.querySelector("#design").addEventListener("click",()=>protfolioDataLoop(2,"yes"))
-    development = document.querySelector("#development").addEventListener("click",()=>protfolioDataLoop(3,"yes"))
-    all = document.querySelector("#all")             .addEventListener("click",()=>protfolioDataLoop(6,"yes"))
-    printBtn = document.querySelector("#print").addEventListener("click",()=>protfolioDataLoop(1,"yes"))
-
-    function protfolioDataLoop(num,ask) {
-      if (ask == "yes") {
-        portfolioData.innerHTML = null;
-      }
- 
-      for (let i = 0; i < num; i++) {
-        let div = document.createElement("div");
-        div.className = "col-lg-4 col-md-4 col-12 data";
-        
-        div.innerHTML = `
-
-        <div class="portfolio-card"> 
-
-          <img src="./static/img/portfolio/${i+1}.jpg" alt="portfolio">
-
-          <div class="contain">
-          <a href="#" class="portfolio-link">
-            <i class="fas fa-eye"></i>
-          </a>
-          <a href="#" class="portfolio-link">
-            <i class="fas fa-link"></i>
-          </a>
-          </div>
-
-        </div>
-
-        `
-        portfolioData.appendChild(div)
-      }
-    }
-    protfolioDataLoop(6)
-
-</script>
 
 
+  <script>
+  </script>
+
+
+
+  <style>
+   
+  </style>
+
+  <!-- /========= static js index.Js ============== / -->
+  <script src="./static/js/index.js"></script>
 
   <!-- /========= Bootstrap cdn Js ============== / -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

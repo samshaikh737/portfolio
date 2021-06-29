@@ -179,6 +179,26 @@
     }
 
 
+    .company-record-counter{
+      margin: 2rem auto;
+    }
+    .company-record-counter .counter {
+      border: 2px solid white;
+      box-shadow: 4px 4px 3px -3px var(--main-green);
+      border-radius: 10px;
+      text-align: center;
+      padding: 1rem;
+      margin: 5px;
+    }
+
+    .company-record-counter .counter h1{
+      font-weight: bold;
+      color: var(--main-green);
+    }
+    .company-record-counter .counter .counter-title{
+      font-weight: 400;
+    }
+
 
 
   @media screen and (max-width:767px) {
