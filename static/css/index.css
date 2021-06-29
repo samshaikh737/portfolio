@@ -201,6 +201,50 @@
 
 
 
+    /* ========= Blog ========= */
+
+      
+    .blog{
+      margin: 3rem 0;
+    }
+
+    .blog .blog-card{
+      margin: 1rem;
+      cursor: pointer;
+      box-shadow: 4px 5px 11px 0px rgba(255,255,255,0.63);
+      -webkit-box-shadow: 1px -3px 7px -1px rgb(255 255 255 / 78%);
+      -moz-box-shadow: 4px 5px 11px 0px rgba(255,255,255,0.63);
+    }
+
+    .blog-card:hover .blog-contain .blog-title{
+      color: var(--main-green);
+    }
+
+   .blog .blog-card .blog-img-container img{
+    width: 100%;
+   }
+   .blog .blog-card .blog-contain{
+     margin-top: 1rem;
+     padding: 1rem;
+   }
+   .blog .blog-card .blog-contain .blog-title{
+     margin-bottom: 1rem;
+     transition: .3s;
+   }
+
+  .blog .blog-card .blog-contain .blog-date{
+    color: var(--main-green);
+  }
+
+  .blog .blog-card .blog-contain .blog-date-and-type{
+    font-size: 15px;
+    margin: 5px 0;
+  }
+  .blog .blog-card .blog-contain .blog-desc{
+    color: #cccccc;
+  }
+
+
   @media screen and (max-width:767px) {
     .header .header-row{
         height: auto;
